@@ -1,0 +1,766 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* NAVEGACIÓN */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 12px 20px;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    transition: background 0.2s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background-color: #333;
+    border-radius: 4px;
+}
+
+/* SECCIÓN INICIO: FOTO + INFO */
+.perfil-principal {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.perfil-img-container {
+    flex: 0 0 200px;
+}
+
+.perfil-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #000;
+}
+
+.perfil-info {
+    max-width: 500px;
+}
+
+.perfil-info h1 {
+    margin-top: 0;
+}
+
+.perfil-info p {
+    margin: 6px 0;
+}
+
+/* BOTONES PRINCIPALES */
+.botones-principales {
+    margin: 20px 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-principal {
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.btn-principal:hover {
+    transform: translateY(-2px);
+}
+
+/* REDES SOCIALES */
+.redes-sociales {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.btn-red {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: transform 0.2s;
+}
+
+.btn-red img {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-red:hover {
+    transform: translateY(-2px);
+}
+
+/* CONTENIDO CENTRADO PARA OTRAS PÁGINAS */
+.contenido {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* TABLA DE ESTUDIOS */
+.tabla-estudios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-estudios th,
+.tabla-estudios td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabla-estudios th {
+    background-color: #000;
+    color: #fff;
+}
+
+/* GALERÍAS */
+.galeria-hobbies,
+.galeria-proyectos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.hobby-img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid #000;
+}
+.footer {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 2px solid #000;
+}
+
+.footer p {
+    margin: 10px 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.footer-redes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.btn-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;  /* ancho mínimo */
+    max-width: 160px;  /* ancho máximo */
+    padding: 10px 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: transform 0.2s, filter 0.2s;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Colores oficiales de cada red */
+.btn-footer.facebook {
+    background-color: #1877f2;
+}
+
+.btn-footer.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.btn-footer.tiktok {
+    background-color: #010101;
+}
+
+/* Hover */
+.btn-footer:hover {
+    transform: translateY(-3px);
+    filter: brightness(0.85);
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+    .btn-footer {
+        min-width: 90px;
+        max-width: 120px;
+        font-size: 14px;
+        padding: 8px 0;
+    }
+}
+/* Reset básico */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #0f111a;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    color: #ff00ff;
+    border-bottom: 2px solid #ff00ff;
+}
+
+/* Sección principal */
+.hobbies-principal {
+    padding: 50px 20px;
+    background: linear-gradient(120deg, #0f111a, #1a1d2b, #0f111a);
+    color: #fff;
+    text-align: center;
+}
+
+.hobbies-principal h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+.descripcion {
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: #ccc;
+}
+
+/* Tarjetas de hobbies */
+.tarjetas-hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.tarjeta {
+    background-color: #1a1d2b;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(255,0,255,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.tarjeta video {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.tarjeta h2 {
+    margin: 15px 0 10px 0;
+    color: #ff00ff;
+    text-shadow: 0 0 8px #ff00ff;
+}
+
+.tarjeta p {
+    padding: 0 15px 15px 15px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(255,0,255,0.5);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0f111a;
+    color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .tarjetas-hobbies {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 90%;
+    }
+}
+/* Reset básico */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #0f111a;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    color: #00ffff;
+    border-bottom: 2px solid #00ffff;
+}
+
+/* Sección principal */
+.proyectos-principal {
+    padding: 50px 20px;
+    background: linear-gradient(120deg, #0f111a, #1a1d2b, #0f111a);
+    color: #fff;
+    text-align: center;
+}
+
+.proyectos-principal h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.descripcion {
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: #ccc;
+}
+
+/* Tarjetas de proyectos */
+.tarjetas-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.tarjeta {
+    background-color: #1a1d2b;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 320px;
+    box-shadow: 0 0 15px rgba(0,255,255,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.tarjeta video {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.tarjeta h2 {
+    margin: 15px 0 10px 0;
+    color: #00ffff;
+    text-shadow: 0 0 8px #00ffff;
+}
+
+.tarjeta p {
+    padding: 0 15px 15px 15px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0,255,255,0.5);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0f111a;
+    color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .tarjetas-proyectos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 90%;
+    }
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar .nav-links li a:hover,
+.navbar .nav-links li a.active {
+    color: #ff6f61;
+}
+
+/* Sección principal */
+.perfil-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background: #f0f0f0;
+    min-height: 80vh;
+}
+
+.perfil-container {
+    display: flex;
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.2),
+                -10px -10px 30px rgba(255,255,255,0.7);
+    max-width: 900px;
+    width: 100%;
+    align-items: center;
+    gap: 40px;
+}
+
+.perfil-img-container {
+    flex-shrink: 0;
+}
+
+.perfil-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ff6f61;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+.perfil-info h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.perfil-info p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.footer-redes {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-footer {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-footer.facebook { background: #3b5998; }
+.btn-footer.instagram { background: #e4405f; }
+.btn-footer.tiktok { background: #000000; }
+
+.btn-footer:hover {
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .perfil-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .perfil-img {
+        margin-bottom: 20px;
+    }
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar futurista */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    color: #00fff7;
+    box-shadow: 0 5px 15px rgba(0, 255, 247, 0.2);
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00fff7;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #00fff7;
+    font-weight: 500;
+    transition: 0.3s;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+.navbar .nav-links li a:hover,
+.navbar .nav-links li a.active {
+    background: #00fff7;
+    color: #0f0f0f;
+    box-shadow: 0 4px 15px rgba(0, 255, 247, 0.5);
+}
+
+/* Sección principal */
+.estudios-principal {
+    padding: 60px 20px;
+    background: #0f0f0f;
+    color: #fff;
+    text-align: center;
+}
+
+.estudios-principal h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #00fff7;
+    text-shadow: 0 0 10px #00fff7;
+}
+
+.descripcion {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+/* Tarjetas futuristas 3D */
+.tarjetas-estudio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.tarjeta {
+    background: #1a1a1a;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 10px 10px 30px rgba(0, 255, 247, 0.3),
+                -10px -10px 30px rgba(0, 255, 247, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 15px 15px 40px rgba(0, 255, 247, 0.5),
+                -15px -15px 40px rgba(0, 255, 247, 0.2);
+}
+
+.tarjeta video {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #00fff7;
+}
+
+.tarjeta h2 {
+    margin: 15px 0 10px;
+    color: #00fff7;
+}
+
+.tarjeta p {
+    font-size: 0.95rem;
+    color: #ccc;
+    padding: 0 10px;
+}
+
+/* Botones 3D dentro de las tarjetas */
+.btn-tarjeta {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(145deg, #00fff7, #00c2b0);
+    color: #0f0f0f;
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 5px 5px 15px rgba(0, 255, 247, 0.4),
+                -5px -5px 15px rgba(0, 255, 247, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 20px rgba(0, 255, 247, 0.6),
+                -8px -8px 20px rgba(0, 255, 247, 0.2);
+}
+
+/* Footer futurista */
+.footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: #0f0f0f;
+    color: #00fff7;
+    box-shadow: inset 0 5px 15px rgba(0, 255, 247, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tarjetas-estudio {
+        grid-template-columns: 1fr;
+    }
+}
